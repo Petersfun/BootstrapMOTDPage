@@ -29,12 +29,21 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                <ul class="nav navbar-nav">
-                  <li><a href="#staff" data-toggle="collapse" data-target="#staff" aria-expanded="false" aria-controls="Staff">Staff</a></li>
-                  <li><a href="#vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo">VIP Information</a></li>
-                  <li><a href="#gamerules" data-toggle="collapse" data-target="#gamerules" aria-expanded="false" aria-controls="gamerules">Game Rules</a></li>
-                  <li><a href="#generalrules" data-toggle="collapse" data-target="#generalrules" aria-expanded="false" aria-controls="generalrules">General</a></li>
-                  <li><a href="#predefined" data-toggle="collapse" data-target="#predefined" aria-expanded="false" aria-controls="predefined">Pre-Defined</a></li>
-                  <li><a href="#commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands">Commands</a></li>
+               <li><a href="#staff" data-toggle="collapse" data-target="#staff" aria-expanded="false" aria-controls="Staff">Staff</a></li>
+			   <li><a href="#commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands">Commands</a></li>
+			   <li><a href="#vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo">VIP Information</a></li>
+			   <li><a href="#RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">Rule</a></li>
+
+			   <!--<li role="presentation" class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Rules<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">                  
+				  <li><a href="#RULESGeneral" data-toggle="collapse" data-target="#RULESGeneral" aria-expanded="false" aria-controls="RULESGeneral"><p data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">General Rules</p></a></li>
+                  <li><a href="#RULESGuard" data-toggle="collapse" data-target="#RULESGuard" aria-expanded="false" aria-controls="RULESGuard"><p data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">Guard Rules</p></a></li>
+				  <li><a href="#RULESPrisoner" data-toggle="collapse" data-target="#RULESPrisoner" aria-expanded="false" aria-controls="RULESPrisoner"><p data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">Prisoner Rules</p></a></li>
+				  <li><a href="#RULESAdmin" data-toggle="collapse" data-target="#RULESAdmin" aria-expanded="false" aria-controls="RULESAdmin"><p data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">Admin/Mod Rules</p></a></li>
+				  <li><a href="#RULESDays" data-toggle="collapse" data-target="#RULESDays" aria-expanded="false" aria-controls="RULESDays"><p data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">Predefined Days</p></a></li>
+				</ul>-->		
                </ul>
             </div>
             <!--/.nav-collapse -->
@@ -45,15 +54,15 @@
       <div class="container">
       <div class="col-md-12">
       <div class="page-header">
-         <h2>Jailbreak Rules</h2>
+        <center><h2>Jailbreak Rules</h2></center>
          <small>
             <div class="alert alert-warning alert-dismissible" role="alert">
                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <strong>Info!</strong> Under Development.
+               <center><strong>Info!</strong> Under Development.</center>
 			   
 			<div class="progress">
-			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-			Complete: 65%
+			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+			Complete: 90%
 			</div>
 			</div>
             </div>
@@ -63,7 +72,7 @@
          </br> 
          <div name="GAMEOBJECTIVE">
             <div class="panel panel-primary">
-               <div class="panel-heading" name="go" data-toggle="collapse" data-target="#go" aria-expanded="false" aria-controls="go"><font size="5">Game Objective</font></div>
+               <div class="panel-heading" name="go" data-toggle="collapse" data-target="#go" aria-expanded="false" aria-controls="go"><font size="5"><center>Game Objective</center></font></div>
                <div class="collapse" id="go">
                   <li class="list-group-item">1. Prisoner's will attempt to control Prisoner's and force them to partake in several minigames, while also killing rebellious Prisoner's.</li>
                   <li class="list-group-item">2. CT's are regularly known as Guards.</li>
@@ -77,7 +86,7 @@
          </br>
 		 <div name="RULES">
             <div class="panel panel-primary">
-               <div class="panel-heading" name="RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES"><font size="5">Rules</font></div>
+               <div class="panel-heading" name="RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES"><font size="5"><center>Rules</center></font></div>
                <div class="collapse" id="RULES">
 			   
 			   <ul class="list-group">
@@ -193,7 +202,7 @@
          </br>
 		 <div name="STAFF">
             <div class="panel panel-primary">
-               <div class="panel-heading" name="Staff" data-toggle="collapse" data-target="#Staff" aria-expanded="false" aria-controls="Staff"><font size="5">Staff</font></div>
+               <div class="panel-heading" name="Staff" data-toggle="collapse" data-target="#Staff" aria-expanded="false" aria-controls="Staff"><font size="5"><center>Staff</center></font></div>
                <div class="collapse" id="Staff">
                   <table class="table">
                      <tr>
@@ -257,7 +266,7 @@
          </br>
          <div name="VIPINFO">
             <div class="panel panel-primary">
-               <div class="panel-heading" name="vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo"><font size="5">Vip Info</font></div>
+               <div class="panel-heading" name="vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo"><font size="5"><center>Vip Info</center></font></div>
                <div class="collapse" id="vipinfo">
                   <ul class="list-group">
                      <li class="list-group-item"><font size="5" color="red">It costs $5 to become VIP. To donate, use either:</font></li>
@@ -307,7 +316,7 @@
          </br>
          <div name="COMMANDS">
             <div class="panel panel-primary">
-               <div class="panel-heading" name="commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands"><font size="5">Commands</font></div>
+               <div class="panel-heading" name="commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands"><font size="5"><center>Commands</center></font></div>
                <div class="collapse" id="commands">
 			   <ul class="list-group">
                   <li class="list-group-item">Mute player: Hold Tab, Select Player then Delete</li>
