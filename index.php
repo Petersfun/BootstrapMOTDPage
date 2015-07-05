@@ -54,7 +54,7 @@
                 </a>
 
                 <div class="collapse" id="staff">
-                    <?php include "./admins.php" ?>
+                    <?php include "./php/admins.php" ?>
                 </div>
 			
 				</br>
