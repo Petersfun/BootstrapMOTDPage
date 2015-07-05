@@ -49,7 +49,7 @@
 
             <div class="col-md-12">
 			</br>
-			<a data-toggle="collapse" data-target="#staff" aria-expanded="false" aria-controls="staff">
+			<a name="staff" data-toggle="collapse" data-target="#staff" aria-expanded="false" aria-controls="staff">
                     <font color="green" size="5">Staff</font>
                 </a>
 
@@ -63,6 +63,7 @@
                 </a>
 
                 <div class="collapse" id="General">
+				<a name="general">
                     <ul class="list-group">
                         <li class="list-group-item">
                             Rule #1: Don't be gay <a class="tip" title="Testing"></a>
@@ -79,7 +80,7 @@
                 </div>
 
 				</br>
-                <a data-toggle="collapse" data-target="#t" aria-expanded="false" aria-controls="t">
+                <a name="t" data-toggle="collapse" data-target="#t" aria-expanded="false" aria-controls="t">
                     <font color="red" size="5">T Rules</font>
                 </a>
 
@@ -100,8 +101,7 @@
                 </div>
 
 				</br>
-				<a name="ct">
-                <a data-toggle="collapse" data-target="#ct" aria-expanded="false" aria-controls="ct">
+                <a name="ct" data-toggle="collapse" data-target="#ct" aria-expanded="false" aria-controls="ct">
                     <font color="blue" size="5">CT Rules</font>
                 </a>
 				<div class="collapse" id="ct">
