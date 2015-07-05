@@ -70,7 +70,7 @@
                   <li class="list-group-item">3. Prisoner's are regularly known as prisoners.</li>
                   <li class="list-group-item">4. Prisoner's will attempt to defeat CPrisoner's by any means necessary.</li>
                </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
+               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
@@ -186,7 +186,7 @@
 				  </div>
 				  <ul>
                </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
+               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
@@ -250,7 +250,7 @@
                                       ?>
                   </table>
                </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
+               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
@@ -300,7 +300,7 @@
                      ?>
 				  </table>
                </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
+               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
@@ -321,7 +321,7 @@
                   <li class="list-group-item">!calladmin - Report a Player</li>
 				  </ul>
                </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
+               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
