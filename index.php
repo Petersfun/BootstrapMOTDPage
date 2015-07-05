@@ -141,7 +141,7 @@
 				  <li class="list-group-item">7. Guards may not give T's weapons of any sort (Weapon Planting). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
 				  <li class="list-group-item">8. Guards may not wander or roam the map away from the Warden unless searching for rebellious T's.</li>
 				  <li class="list-group-item">9. Whoever is last CT must say that they are Last CT and must commit to being last CT. They may not give orders. The last T may LR.</li>
-				  <li class="list-group-item"></li>
+				  <li class="list-group-item">10. Other Ct's may repeat for the warden if it is correct. Misinformation will result in a (slay/swap/ctban/kick/ban)</li>
 				  <li class="list-group-item"></li>
 				  <li class="list-group-item"></li>
 				  <li class="list-group-item"></li>
@@ -159,9 +159,9 @@
 				  <li class="list-group-item"><font color="red" size="5"><center>T</center></font></li>
 				  <li class="list-group-item">1. T's can only become CT's by either joining on the first round or being placed on CT through the !guard queue. Breaking this rule will result in (swap/ctban/kick/ban)</li>
 				  <li class="list-group-item">2. T's in armory are automatically rebelling.</li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
+				  <li class="list-group-item">3.T's may not find loopholes in orders. If orders are unclear, T's may ask for a reworded order or an explanation of the order. Example: Warden Tells T's to stack on his bullets. T's may not stack on the bullets that are in his gun. T's who constantly ask to delay or troll are subject to (slay/silence/kick/ban)</li>
+				  <li class="list-group-item">4. T's may ask for one repeat per order. Warden is required to only one repeat per order at the T's demand. Additional repeats can be made, but are not required.</li>
+				  <li class="list-group-item">4a. </li>
 				  <li class="list-group-item"></li>
 				  <li class="list-group-item"></li>
 				  <li class="list-group-item"></li>
