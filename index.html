@@ -43,84 +43,114 @@
                 </small>
             </div>
 
+            <div class="panel panel-primary">
+                <!-- Owner panel contents -->
+                <div class="panel-heading">Owners</div>
 
-            <div class="col-md-12">
-                <a type="button" data-toggle="collapse" data-target="#General" aria-expanded="true" aria-controls="General">
-                    <font color="green" size="5">General Rule</font>
-                </a>
-                <br />
-                <div class="collapse" id="General"> <!--Rules for General-->
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            Rule #1: Don't be gay <a class="tip" title="Testing"></a>
-                            <span class="badge"><img src="" /></span>
-                        </li>
-                        <li class="list-group-item">
-                            Rule #2: Fuck if i know.
-                            <span class="badge"><img src="" /></span>
-                        </li>
-                        <span class="label label-default"> <!--Be sure to change the date when you add or remove rules-->
-                            Last Update: 7/4/2015
-                        </span>
-                    </ul>
+                <!-- Table -->
+                <table class="table">
+                    <tr>
+                        <th align="center">Name</th>
+                        <th align="center">SteamID</th>
+                    </tr>
                 </div>
+                </table>
+        </div><div class="panel panel-primary">
+            <!-- Admin panel contents -->
+            <div class="panel-heading">Admins</div>
 
-                <a type="button" data-toggle="collapse" data-target="#General" aria-expanded="true" aria-controls="T">
-                    <font color="red" size="5">T Rules</font>
-                </a>                
-                <br />
-                <div id="T" class="collapse in"> <!--Rules for T-->
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            Rule #1: Don't be gay
-                            <span class="badge"><img src="" /></span>
-                        </li>
-                        <li class="list-group-item">
-                            Rule #2: Fuck if i know.
-                            <span class="badge"><img src="" /></span>
-                        </li>
-                        <span class="label label-default"> <!--Be sure to change the date when you add or remove rules-->
-                            Last Update: 7/4/2015
-                        </span>
-                    </ul>
-                </div>
-
-                <a type="button" data-toggle="collapse" data-target="#CT" aria-expanded="true" aria-controls="CT">
-                    <font color="blue" size="5">CT Rules</font> <!--Rules for CT-->
-                </a>                        
-                <br />
-                <div id="CT" class="collapse in">
-
-                    <ul class="list-group">
-
-                        <li class="list-group-item">
-                            Rule #1: Don't be gay
-                            <span class="badge"><img src="" /></span>
-                        </li>
-                        <li class="list-group-item">
-                            Rule #2: Fuck if i know.
-                            <span class="badge"><img src="" /></span>
-                        </li>
-                        <span class="label label-default"> <!--Be sure to change the date when you add or remove rules-->
-                            Last Update: 7/4/2015
-                        </span>
-                    </ul>
-                </div>
-            </div>
-
+            <!-- Table -->
+            <table class="table">
+                <tr>
+                    <th align="center">Name</th>
+                    <th align="center">SteamID</th>
+                </tr>
+            </table>
         </div>
 
-        <footer style="text-align: right; width: 100%; margin-top: 15px;"></footer>
+        <div class="col-md-12">
+            <a type="button" data-toggle="collapse" data-target="#General" aria-expanded="false" aria-controls="General">
+                <font color="green" size="5">General Rule</font>
+            </a>
+            <br />
+            <div class="collapse" id="General">
+                <!--Rules for General-->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Rule #1: Don't be gay <a class="tip" title="Testing"></a>
+                        <span class="badge"><img src="" /></span>
+                    </li>
+                    <li class="list-group-item">
+                        Rule #2: Fuck if i know.
+                        <span class="badge"><img src="" /></span>
+                    </li>
+                    <span class="label label-default">
+                        <!--Be sure to change the date when you add or remove rules-->
+                        Last Update: 7/4/2015
+                    </span>
+                </ul>
+            </div>
 
-        <!--Placed at the bottom for faster loading speeds.-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="utilities/bootstrap-3.3.4/js/bootstrap.min.js"></script>
-        <script src="utilities/tipsy/javascripts/jquery.tipsy.js"></script>
-        <script>
+            <a type="button" data-toggle="collapse" data-target="#T" aria-expanded="false" aria-controls="T">
+                <font color="red" size="5">T Rules</font>
+            </a>
+            <br />
+            <div class="collapse" id="T">
+                <!--Rules for T-->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Rule #1: Don't be gay
+                        <span class="badge"><img src="" /></span>
+                    </li>
+                    <li class="list-group-item">
+                        Rule #2: Fuck if i know.
+                        <span class="badge"><img src="" /></span>
+                    </li>
+                    <span class="label label-default">
+                        <!--Be sure to change the date when you add or remove rules-->
+                        Last Update: 7/4/2015
+                    </span>
+                </ul>
+            </div>
+
+            <a type="button" data-toggle="collapse" data-target="#CT" aria-expanded="false" aria-controls="CT">
+                <font color="blue" size="5">CT Rules</font>
+            </a>
+            <br />
+            <div class="collapse" id="CT">
+                <!--Rules for CT-->
+
+                <ul class="list-group">
+
+                    <li class="list-group-item">
+                        Rule #1: Don't be gay
+                        <span class="badge"><img src="" /></span>
+                    </li>
+                    <li class="list-group-item">
+                        Rule #2: Fuck if i know.
+                        <span class="badge"><img src="" /></span>
+                    </li>
+                    <span class="label label-default">
+                        <!--Be sure to change the date when you add or remove rules-->
+                        Last Update: 7/4/2015
+                    </span>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="text-align: right; width: 100%; margin-top: 15px;"></footer>
+
+    <!--Placed at the bottom for faster loading speeds.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="utilities/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script src="utilities/tipsy/javascripts/jquery.tipsy.js"></script>
+    <script>
             $(".tip").tipsy({ gravity: 'n' });
 
 
-        </script>
+    </script>
 
 </body>
 </html>
