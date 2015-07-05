@@ -107,8 +107,8 @@
 				  </ul>
 			   
 			   <ul class="list-group">
-                  <li class="list-group-item" name="RULESGuard" data-toggle="RULESGuard" data-target="#RULESGuard" aria-expanded="false" aria-controls="RULESGuard"><font color="blue" size="5"><center>Guards</center></font></li>  
-				  <div class="collapse" id="RULESGuard">	
+                  <li class="list-group-item" name="RULESGuard" data-toggle="collapse" data-target="#RULESGuard" aria-expanded="false" aria-controls="RULESGuard"><font color="blue" size="5"><center>Guard</center></font></li>  
+				  <div class="collapse" id="RULESGuard">		
 				  <li class="list-group-item">1. Guards may not talk over warden constantly. Breaking this rule will result in an extended (mute/silence/swap/ctban/kick/ban)</li>
 				  <li class="list-group-item">2. Guards may repeat for the warden if it is correct. Misinformation will result in a (slay/swap/ctban/kick/ban)</li>
 				  <li class="list-group-item">3. Guards may not stay in armory past 19:20 (40 seconds) (Armory Camping). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
