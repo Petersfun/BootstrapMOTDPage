@@ -62,7 +62,7 @@
       <div class="col-md-12">
          </br> 
          <div name="GAMEOBJECTIVE">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                <div class="panel-heading" name="go" data-toggle="collapse" data-target="#go" aria-expanded="false" aria-controls="go"><font size="5">Game Objective</font></div>
                <div class="collapse" id="go">
                   <li class="list-group-item">1. CPrisoner's will attempt to control Prisoner's and force them to partake in several minigames, while also killing rebellious Prisoner's.</li>
@@ -75,7 +75,7 @@
          </div>
          </br>
 		 <div name="RULES">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                <div class="panel-heading" name="RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES"><font size="5">Rules</font></div>
                <div class="collapse" id="RULES">
 			   
@@ -191,7 +191,7 @@
          </div>
          </br>
 		 <div name="STAFF">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                <div class="panel-heading" name="Staff" data-toggle="collapse" data-target="#Staff" aria-expanded="false" aria-controls="Staff"><font size="5">Staff</font></div>
                <div class="collapse" id="Staff">
                   <table class="table">
@@ -255,7 +255,7 @@
          </div>
          </br>
          <div name="VIPINFO">
-            <div class="panel panel-success">
+            <div class="panel panel-primary">
                <div class="panel-heading" name="vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo"><font size="5">Vip Info</font></div>
                <div class="collapse" id="vipinfo">
                   <ul class="list-group">
