@@ -26,9 +26,11 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
 					<li><a href="#staff" data-toggle="collapse" data-target="#staff" aria-expanded="false" aria-controls="Staff">Staff</a></li>
-                    <li><a href="#servers" data-toggle="collapse" data-target="#servers" aria-expanded="false" aria-controls="servers">Servers</a></li>
 					<li><a href="#vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo">VIP Information</a></li>
-					<li><a href="#ct" data-toggle="collapse" data-target="#ct" aria-expanded="false" aria-controls="ct">CT Rules</a></li>
+					<li><a href="#gamerules" data-toggle="collapse" data-target="#gamerules" aria-expanded="false" aria-controls="gamerules">Game Rules</a></li>
+					<li><a href="#generalrules" data-toggle="collapse" data-target="#generalrules" aria-expanded="false" aria-controls="generalrules">General</a></li>
+					<li><a href="#predefined" data-toggle="collapse" data-target="#predefined" aria-expanded="false" aria-controls="predefined">Pre-Defined</a></li>
+					<li><a href="#commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands">Commands</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -54,31 +56,14 @@
                 </a>
 
                 <div class="collapse" id="staff">
-                    <?php include "./php/admins.php" ?>
+                    <?php include "./admins.php" ?>
                 </div>
 				
-				
-				</br>
-                <a name="servers" data-toggle="collapse" data-target="#servers" aria-expanded="false" aria-controls="servers">
-                    <font color="green" size="5">Servers</font>
-                </a>
-
-                <div class="collapse" id="servers">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/play.toxicgaming.org" role="button">Jailbreak</a><a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/167.114.205.132:27015" role="button">Idle</a><a id="inlinebutton" class="btn btn-primary btn-lg" href="ts3server://ts.toxicgaming.org" role="button">TeamSpeak</a>
-                            <!-- <span class="badge"><img src="" /></span> -->
-                        </li>
-                        <span class="label label-default">
-                            Last Update: 7/4/2015
-                        </span>
-                    </ul>
-                </div>
 			
 			
 				</br>
                 <a name="vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo">
-                    <font color="green" size="5">VIP Information</font>
+                    <font color="orange" size="5">VIP Information</font>
                 </a>
 
                 <div class="collapse" id="vipinfo">
@@ -197,10 +182,10 @@
                 </div>
 
 				</br>
-                <a name="ct" data-toggle="collapse" data-target="#ct" aria-expanded="false" aria-controls="ct">
-                    <font color="blue" size="5">General Rules</font>
+                <a name="generalrules" data-toggle="collapse" data-target="#generalrules" aria-expanded="false" aria-controls="generalrules">
+                    <font color="green" size="5">General Rules</font>
                 </a>
-				<div class="collapse" id="ct">
+				<div class="collapse" id="generalrules">
 
                 <ul class="list-group">
 					
@@ -226,7 +211,48 @@
                         </span>
                     </ul>
                 </div>
-            </div>
+				
+				
+				</br>
+                <a name="predefined" data-toggle="collapse" data-target="#predefined" aria-expanded="false" aria-controls="predefined">
+                    <font color="orange" size="5">Pre-Defined</font>
+                </a>
+
+                <div class="collapse" id="predefined">
+				<li class="list-group-item">Panda Freeday: Panda's crouch at all times may not left click, may not teleport, can not climb or jump unless getting to a CT. Pandas may stand up and AFK freeze if they are typing. Pandas may not carry guns, holstered or otherwise.</li>
+				<li class="list-group-item">Zombie Freeday: Zombies walk at all times, may Section 7: Pre-defined Rules.</li>
+				<li class="list-group-item">Gun toss: No crouching, no bhopping, no cheating, no admin power from anyone, CT's first, no interference from other players.</li>
+				<li class="list-group-item">Shot for Shot: Stay on the wall at all times, no healing, no hiding, no interference from other players.</li>
+				<li class="list-group-item">Lava Freeday: T's may only be on main cell floor if they are on a spray, and may left or right click. Any other areas of the map outside of the main cell floor such as Soccer, Surf, Climb, etc. does not count as main cell floor, and T's may run around freely in those areas.</li>
+				<li class="list-group-item">Warday: CT's may kill any T's inside warzone. CT's may kill T's that are outside if they are red or have a gun of any type. CT's may NOT kill T's while outside of the warzone.</li>
+                        <span class="label label-default">
+                            Last Update: 7/4/2015
+                        </span>
+                    </ul>
+				</div>
+				
+				
+				</br>
+                <a name="commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands">
+                    <font color="blue" size="5">Commands</font>
+                </a>
+
+                <div class="collapse" id="commands">
+			<li class="list-group-item">Mute player: Hold Tab, Select Player then Delete</li>
+			<li class="list-group-item">nominate - Nominate a map.</li>
+    		<li class="list-group-item">rtv - Rock the vote.</li>  
+    		<li class="list-group-item">!store - Store menu to buy and equip.</li>
+    		<li class="list-group-item">!guard - To be added to queue</li>
+    		<li class="list-group-item">!w - To be Warden</li>
+    		<li class="list-group-item">!retire - To resign as Warden</li>
+    		<li class="list-group-item">!rules - Server Rules</li>
+    		<li class="list-group-item">!lr - Last Request</li>
+			<li class="list-group-item">!calladmin - Report a Player</li>
+                        <span class="label label-default">
+                            Last Update: 7/4/2015
+                        </span>
+                    </ul>
+				</div>
 
         </div>
 
