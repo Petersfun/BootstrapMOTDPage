@@ -5,7 +5,8 @@
       <meta name="description" content="TGN Jailbreak MOTD" />
       <meta name="keywords" content="" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css' />
+	  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+      <!--<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css' />-->
       <link rel="stylesheet" href="utilities/bootstrap-3.3.4/css/bootstrap.min.css" type='text/css' />
       <link rel="stylesheet" href="utilities/tipsy/stylesheets/tipsy.css" type='text/css' />
       <link rel="stylesheet" href="css/style.css" type='text/css' />
