@@ -65,21 +65,24 @@
             <div class="panel panel-success">
                <div class="panel-heading" name="go" data-toggle="collapse" data-target="#go" aria-expanded="false" aria-controls="go"><font size="5">Game Objective</font></div>
                <div class="collapse" id="go">
-                  <li class="list-group-item">1. CT's will attempt to control T's and force them to partake in several minigames, while also killing rebellious T's.</li>
-                  <li class="list-group-item">2. CT's are regularly known as Guards.</li>
-                  <li class="list-group-item">3. T's are regularly known as prisoners.</li>
-                  <li class="list-group-item">4. T's will attempt to defeat CT's by any means necessary.</li>
+                  <li class="list-group-item">1. CPrisoner's will attempt to control Prisoner's and force them to partake in several minigames, while also killing rebellious Prisoner's.</li>
+                  <li class="list-group-item">2. CPrisoner's are regularly known as Guards.</li>
+                  <li class="list-group-item">3. Prisoner's are regularly known as prisoners.</li>
+                  <li class="list-group-item">4. Prisoner's will attempt to defeat CPrisoner's by any means necessary.</li>
                </div>
                <span class="label label-default">Last Update: 7/4/2015</span>
             </div>
          </div>
          </br>
-		 <div name="GENERALRULES">
+		 <div name="RULES">
             <div class="panel panel-success">
-               <div class="panel-heading" name="generalrules" data-toggle="collapse" data-target="#generalrules" aria-expanded="false" aria-controls="generalrules"><font size="5">General Rules</font></div>
-               <div class="collapse" id="generalrules">
+               <div class="panel-heading" name="RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES"><font size="5">Rules</font></div>
+               <div class="collapse" id="RULES">
+			   
 			   <ul class="list-group">
-                  <li class="list-group-item">1. Do not disrespect/harass/threaten/flame any players.</li>
+			      <li class="list-group-item" name="RULESGeneral" data-toggle="collapse" data-target="#RULESGeneral" aria-expanded="false" aria-controls="RULESGeneral"><font color="green" size="5"><center>General</center></font></li>  
+				  <div class="collapse" id="RULESGeneral">				  
+				  <li class="list-group-item">1. Do not disrespect/harass/threaten/flame any players.</li>
                   <li class="list-group-item">2. Do not spam chat, voice, or radio commands.</li>
                   <li class="list-group-item">3. Do not hack/exploit.</li>
                   <li class="list-group-item">4. Do not cheat/ghost/glitch.</li>
@@ -95,103 +98,92 @@
                   <li class="list-group-item">14. No racial slurs, including coded racism.</li>
                   <li class="list-group-item">15. No scamming, offenders will be permanently banned.</li>
                   <li class="list-group-item">16. Use English only in voice chat.</li>
-				  <li class="list-group-item">17. Cell Doors must be opened by 18:30. If cells are unopened at 18:29, then a Freeday will be initiated immediately. If cells continue to be closed for extended periods of times or constantly, CT's may be (slayed/swap/ctban/kick/ban).</li>
-				  <li class="list-group-item">18. Freeze is implied at the end of a command unless ordered otherwise</li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>	
+				  <li class="list-group-item">17. Cell Doors must be opened by 18:30. If cells are unopened at 18:29, then a Freeday will be initiated immediately. If cells continue to be closed for extended periods of times or constantly, CPrisoner's may be (slayed/swap/ctban/kick/ban).</li>
+				  <li class="list-group-item">18. No Detours and Delays, Freeze are implied to be in effect at all times. But the possession of guns or grenades is not implied.</li>
+				  <li class="list-group-item">19. Freeday does not happen when cells are opened and closed again.</li>
+				  <li class="list-group-item">20. Fish-in-the-barrel type games is not allowed.</li>
+				  <li class="list-group-item">21. You can only become CPrisoner's by either joining on the first round or being placed on CT through the !guard queue. Breaking this rule will result in (swap/ctban/kick/ban)</li>
+				  </div>
 				  </ul>
-               </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
-            </div>
-         </div>
-		 </br>
-		 <div name="RULES">
-            <div class="panel panel-success">
-               <div class="panel-heading" name="RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES"><font size="5">Rules</font></div>
-               <div class="collapse" id="RULES">
+			   
 			   <ul class="list-group">
-                  <li class="list-group-item"><font color="blue" size="5"><center>CT</center></font></li>
-                  <li class="list-group-item">1. Wardens can be established within the CT's to give orders to the T's through the !w chat command.</li>
-				  <li class="list-group-item">1a.  If no CT's are willing to Warden, then a freeday may be declared by an admin accompanying an entire team swap.</li>
-				  <li class="list-group-item">1b. Wardens may not play fish-in-a-barrel type games.</li>
-				  <li class="list-group-item">1c. Wardens may not use "jump restriction" commands in a row. Breaking this rule will result in a (slay/swap).</li>
-				  <li class="list-group-item">1d. Wardens may not revoke warden-initiated Freedays or Wardays.</li>
-				  <li class="list-group-item">1e. Wardens may not use consecutive "days". Example: Warden A may not use a warday after Warden B used on the previous round.</li>
-				  <li class="list-group-item">1f. Wardens may not use text to give commands.</li>
-				  <li class="list-group-item">1g. Only Wardens may give pardons for rebellious T's</li>
-				  <li class="list-group-item">1h. Wardens must explain games prior to being played unless rules are evident.</li>
-				  <li class="list-group-item">1i. Wardens may not give permission to the entirety of the map with the exception of Hide and Seek days.</li>
-				  <li class="list-group-item">1j. Wardens may not constitute games or orders that break any server rules. Example: A Warden can not order a CT to bait or gun plant.</li>
-				  <li class="list-group-item">1k. CTs must give a 3 second warning to drop holstered weapons, and unholstered primaries are always KOS.</li>
-				  <li class="list-group-item">1l. Once a warden has died, T’s must freeze until orders are given or else you are rebelling.</li>
-				  <li class="list-group-item">2m. CTs must be with the warden at all times unless pursuing other activities such as rebels/getting health or ammo. (Do not abuse, you can and will be ctbanned).</li>
-				  <li class="list-group-item">2n. Freeday does not happen when cells are opened and closed again. Furthermore, T's may not be forced to stay in a cell.</li>
-				  <li class="list-group-item">3. Guards may only kill T's that are rebelling or not following the Warden's Orders. Breaking this rule will result in a (slay/swap/ctban/kick/ban). (Freekilling)</li>
-				  <li class="list-group-item">4. Guards may not come within close distance to any T's. The distance is approximately 5 player models away (Baiting) T's who attack violating CT's should be pardoned. Killing a T while baiting will result in a (slay/swap/ctban/kick/ban)</li>
-				  <li class="list-group-item">5. Guards and Vents: Breaking any of these rules will result in a (slay/swap/ctban/kick/ban)</li>
-				  <li class="list-group-item">5a. Guards may not break vent doors unless there is no other way to leave the vent.</li>
-				  <li class="list-group-item">5b. Guards may not camp in a vent or in the way of a vent unless they would be baiting.</li>
-				  <li class="list-group-item">5c. Guards may kill any T in vents</li>
-				  <li class="list-group-item">5d. Guards may only enter vents if they see a T go in the vent or by wardens permission.</li>
-				  <li class="list-group-item">6. Guards may not stay in armory past 19:20 (40 seconds) (Armory Camping). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
-				  <li class="list-group-item">7. Guards may not give T's weapons of any sort (Weapon Planting). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
-				  <li class="list-group-item">8. Guards may not wander or roam the map away from the Warden unless searching for rebellious T's.</li>
-				  <li class="list-group-item">9. Whoever is last CT must say that they are Last CT and must commit to being last CT. They may not give orders. The last T may LR.</li>
-				  <li class="list-group-item">10. Other Ct's may repeat for the warden if it is correct. Misinformation will result in a (slay/swap/ctban/kick/ban)</li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-
+                  <li class="list-group-item" name="RULESGuard" data-toggle="RULESGuard" data-target="#RULESGuard" aria-expanded="false" aria-controls="RULESGuard"><font color="blue" size="5"><center>Guards</center></font></li>  
+				  <div class="collapse" id="RULESGuard">	
+				  <li class="list-group-item">1. Guards may not talk over warden constantly. Breaking this rule will result in an extended (mute/silence/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">2. Guards may repeat for the warden if it is correct. Misinformation will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">3. Guards may not stay in armory past 19:20 (40 seconds) (Armory Camping). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">4. Guards may not give Prisoner's weapons of any sort (Weapon Planting). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">5. The Guard who is Last CT must give Last Prisoner LR.</li>
+				  <li class="list-group-item">6. Guards may only enter vents if they see a Prisoner go in the vent or by wardens permission.</li>
+				  <li class="list-group-item">7. Guards may not wander or roam the map away from the Warden unless searching for rebellious Prisoner's.</li>
+				  <li class="list-group-item">8. Guards and Vents: Breaking any of these rules will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">8a. Guards may not break vent doors unless there is no other way to leave the vent.</li>
+				  <li class="list-group-item">8b. Guards may not camp in a vent or in the way of a vent unless they would be baiting.</li>
+				  <li class="list-group-item">8c. Guards may kill any Prisoner in vents</li>
+				  <li class="list-group-item">9. Guards may not come within close distance to any Prisoner's. The distance is approximately 5 player models away (Baiting) Prisoner's who attack violating CPrisoner's should be pardoned. Killing a T while baiting will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">10. Guards may only kill Prisoner's that are rebelling or not following the Warden's Orders.</li>
+				  <li class="list-group-item">11. Breaking this rule will result in a (slay/swap/ctban/kick/ban). (Freekilling)</li>
+				  <li class="list-group-item">12. Guards may only kill Prisoner's that are rebelling or not following the Warden's Orders.</li>
+				  <li class="list-group-item">13. Breaking this rule will result in a (slay/swap/ctban/kick/ban). (Freekilling)</li>
+				  <li class="list-group-item">15. Guards may not force Prisoner's to stay in a cell.</li>
+				  <li class="list-group-item">16. Guards must be with the warden at all times unless pursuing other activities such as rebels/getting health or ammo. (Do not abuse, you can and will be ctbanned).</li>
+				  <li class="list-group-item">17. Guards must give a 3 second warning to drop holstered weapons, and unholstered primaries are always KOS.</li>
+				  <li class="list-group-item">18. Wardens may not constitute games or orders that break any server rules. Example: A Warden can not order a CT to bait or gun plant.</li>
+				  <li class="list-group-item">19. Wardens may not give permission to the entirety of the map with the exception of Hide and Seek days.</li>
+				  <li class="list-group-item">20. Wardens must explain games prior to being played unless rules are evident.</li>
+				  <li class="list-group-item">21. Only Wardens may give pardons for rebellious Prisoner's</li>
+				  <li class="list-group-item">22. Wardens may not use text to give commands.</li>
+				  <li class="list-group-item">23. Wardens may not use consecutive "days".	Example: Warden A may not use a warday after Warden B used on the previous round.</li>
+				  <li class="list-group-item">24. Wardens may not revoke warden-initiated Freedays or Wardays.</li>
+				  <li class="list-group-item">25. Wardens may not use "jump restriction" commands in a row. Breaking this rule will result in a (slay/swap).</li>
+				  <li class="list-group-item">26. If no Guards's are willing to Warden, then a freeday may be declared by an Admin accompanying an entire team swap.</li>
+				  <li class="list-group-item">27. Wardens can be established within the CPrisoner's to give orders to the Prisoner's through the !w chat command.</li>
+				  <li class="list-group-item">28. Guards may not wander or roam the map away from the Warden unless searching for rebellious Prisoner's.</li>
+				  </div>
 				</ul>
 				  
 				  <ul class="list-group">
-				  <li class="list-group-item"><font color="red" size="5"><center>T</center></font></li>
-				  <li class="list-group-item">1. T's can only become CT's by either joining on the first round or being placed on CT through the !guard queue. Breaking this rule will result in (swap/ctban/kick/ban)</li>
-				  <li class="list-group-item">2. T's in armory are automatically rebelling.</li>
-				  <li class="list-group-item">3.T's may not find loopholes in orders. If orders are unclear, T's may ask for a reworded order or an explanation of the order. Example: Warden Tells T's to stack on his bullets. T's may not stack on the bullets that are in his gun. T's who constantly ask to delay or troll are subject to (slay/silence/kick/ban)</li>
-				  <li class="list-group-item">4. T's may ask for one repeat per order. Warden is required to only one repeat per order at the T's demand. Additional repeats can be made, but are not required.</li>
-				  <li class="list-group-item">4a. </li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-				  <li class="list-group-item"></li>
-
+				  <li class="list-group-item" name="RULESPrisoner" data-toggle="collapse" data-target="#RULESPrisoner" aria-expanded="false" aria-controls="RULESPrisoner"><font color="red" size="5"><center>Prisoners</center></font></li>  
+				  <div class="collapse" id="RULESPrisoner">	
+				  <li class="list-group-item">1. Once a warden has died, Prisoner's must freeze until orders are given or else you are rebelling.</li>
+				  <li class="list-group-item">2. Prisoner's who attack Guards are automatically rebelling. Any guard may ask a T to drop a gun.</li>
+				  <li class="list-group-item">3. Prisoner's in armory are automatically rebelling.</li>
+				  <li class="list-group-item">4. Prisoner's may not find loopholes in orders. If orders are unclear, Prisoner's may ask for a reworded order or an explanation of the order. Example: Warden Tells Prisoner's to stack on his bullets. Prisoner's may not stack on the bullets that are in his gun.</li>
+				  <li class="list-group-item">5. Prisoner's who constantly ask to delay or troll are subject to (slay/silence/kick/ban)</li>
+				  <li class="list-group-item">6. Prisoner's may ask for one repeat per order. Warden is required to only one repeat per order at the Prisoner's demand. Additional repeats can be made, but are not required.</li>
+				  <li class="list-group-item">7. The last Prisoners may type !lr for Last Request. If the final Prisoners was previously rebelling, any Last Request must be acknowledged.</li>
+				  <li class="list-group-item">8. Last Requests may not be used to kill Guard's unfairly. Breaking this rule will result in a (slay/kick/ban)</li>
+				  <li class="list-group-item">9. Rules must be established in each LR. No party may break these rules or result in appropriate action from an admin.</li>
+				  <li class="list-group-item">10. Prisoners's whom rebel between LRs may be killed as if they were rebelling regularly.</li>
+				  <li class="list-group-item">11. The Final Prisoner may choose the Rebel option, where he may be killed as if he was a rebelling T.</li>
+				  </div>
 				  </ul>
-               </div>
-               <span class="label label-default">Last Update: 7/4/2015</span>
-            </div>
-         </div>
-		 </br>
-		 <div name="PREDEFINED">
-            <div class="panel panel-danger">
-               <div class="panel-heading" name="predefined" data-toggle="collapse" data-target="#predefined" aria-expanded="false" aria-controls="predefined"><font size="5">Pre-Defined</font></div>
-               <div class="collapse" id="predefined">
-			   <ul class="list-group">
-                  <li class="list-group-item">Panda Freeday: Panda's crouch at all times may not left click, may not teleport, can not climb or jump unless getting to a CT. Pandas may stand up and AFK freeze if they are typing. Pandas may not carry guns, holstered or otherwise.</li>
-                  <li class="list-group-item">Zombie Freeday: Zombies walk at all times, may Section 7: Pre-defined Rules.</li>
-                  <li class="list-group-item">Gun toss: No crouching, no bhopping, no cheating, no admin power from anyone, CT's first, no interference from other players.</li>
-                  <li class="list-group-item">Shot for Shot: Stay on the wall at all times, no healing, no hiding, no interference from other players.</li>
-                  <li class="list-group-item">Lava Freeday: T's may only be on main cell floor if they are on a spray, and may left or right click. Any other areas of the map outside of the main cell floor such as Soccer, Surf, Climb, etc. does not count as main cell floor, and T's may run around freely in those areas.</li>
-                  <li class="list-group-item">Warday: CT's may kill any T's inside warzone. CT's may kill T's that are outside if they are red or have a gun of any type. CT's may NOT kill T's while outside of the warzone.</li>
+
+				  
+				  <ul class="list-group">
+				  <li class="list-group-item" name="RULESAdmin" data-toggle="collapse" data-target="#RULESAdmin" aria-expanded="false" aria-controls="RULESAdmin"><font color="orange" size="5"><center>Admins/Mods</center></font></li>  
+				  <div class="collapse" id="RULESAdmin">	
+				  <li class="list-group-item">1. Do not punish a party without proper reasoning.</li>
+				  <li class="list-group-item">2. Server rules require warnings.</li>
+				  <li class="list-group-item">3. Admins may mute the entire server to quell mass mic spamming.</li>
+				  <li class="list-group-item">4. Admins are not to remove existing punishments on other players without proper reasoning.</li>
+				  <li class="list-group-item">5. Admins will not have in-game squabbling. Any issues can be resolved in chat or the forums.</li>
+				  <li class="list-group-item">6. Admins cannot punish (slay, mute, etc) another admin for ANY reason and will result in the removal of your admin</li>
+				  <li class="list-group-item">7. Do not force map changes unless the current map is bugged or broken.</li>
+				  <li class="list-group-item">8. Do not use admin abilities to adversely affect players without consensus from that player or the server, with the exception of punishments.</li>
+				  </div>
+				  </ul>
+				  
+				  <ul class="list-group">
+				  <li class="list-group-item" name="RULESDays" data-toggle="collapse" data-target="#RULESDays" aria-expanded="false" aria-controls="RULESDays"><font color="purple" size="5"><center>Predefined Days</center></font></li>  
+				  <div class="collapse" id="RULESDays">	
+				  <li class="list-group-item">1. Panda Freeday: Panda's crouch at all times may not left click, may not teleport, can not climb or jump unless getting to a CT. Pandas may stand up and AFK freeze if they are typing. Pandas may not carry guns, holstered or otherwise.</li>
+				  <li class="list-group-item">2. Zombie Freeday: Zombies walk at all times, may Section 7: Pre-defined Rules.</li>
+				  <li class="list-group-item">3. Gun toss: No crouching, no bhopping, no cheating, no admin power from anyone, CPrisoner's first, no interference from other players.</li>
+				  <li class="list-group-item">4. Shot for Shot: Stay on the wall at all times, no healing, no hiding, no interference from other players.</li>
+				  <li class="list-group-item">5. Lava Freeday: Prisoner's may only be on main cell floor if they are on a spray, and may left or right click. Any other areas of the map outside of the main cell floor such as Soccer, Surf, Climb, etc. does not count as main cell floor, and Prisoner's may run around freely in those areas.</li>
+				  <li class="list-group-item">6. Warday: CPrisoner's may kill any Prisoner's inside warzone. CPrisoner's may kill Prisoner's that are outside if they are red or have a gun of any type. CPrisoner's may NOT kill Prisoner's while outside of the warzone.</li>
+				  </div>
 				  <ul>
                </div>
                <span class="label label-default">Last Update: 7/4/2015</span>
