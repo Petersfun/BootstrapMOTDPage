@@ -29,7 +29,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                <ul class="nav navbar-nav">
-               <li><a href="#staff" data-toggle="collapse" data-target="#staff" aria-expanded="false" aria-controls="Staff">Staff</a></li>
+               <li><a href="#Staff" data-toggle="collapse" data-target="#Staff" aria-expanded="false" aria-controls="Staff">Staff</a></li>
 			   <li><a href="#commands" data-toggle="collapse" data-target="#commands" aria-expanded="false" aria-controls="commands">Commands</a></li>
 			   <li><a href="#vipinfo" data-toggle="collapse" data-target="#vipinfo" aria-expanded="false" aria-controls="vipinfo">VIP Information</a></li>
 			   <li><a href="#RULES" data-toggle="collapse" data-target="#RULES" aria-expanded="false" aria-controls="RULES">Rule</a></li>
