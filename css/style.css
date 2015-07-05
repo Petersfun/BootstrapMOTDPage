@@ -1,0 +1,24 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Vollkorn", serif;
+}
+
+body {
+  padding-top: 70px;
+}
+
+a.tip {
+  color: #333;
+}
+
+a.tip:hover {
+  text-decoration: none;
+}
+
+a.tip:after {
+  border-bottom: 1px dashed #ccc;
+  content: "(?)";
+  color: #333;
+  font-size: .65em;
+  position: relative;
+  top: -.2em;
+}
