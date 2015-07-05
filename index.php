@@ -65,10 +65,11 @@
             <div class="panel panel-primary">
                <div class="panel-heading" name="go" data-toggle="collapse" data-target="#go" aria-expanded="false" aria-controls="go"><font size="5">Game Objective</font></div>
                <div class="collapse" id="go">
-                  <li class="list-group-item">1. CPrisoner's will attempt to control Prisoner's and force them to partake in several minigames, while also killing rebellious Prisoner's.</li>
-                  <li class="list-group-item">2. CPrisoner's are regularly known as Guards.</li>
-                  <li class="list-group-item">3. Prisoner's are regularly known as prisoners.</li>
-                  <li class="list-group-item">4. Prisoner's will attempt to defeat CPrisoner's by any means necessary.</li>
+                  <li class="list-group-item">1. Prisoner's will attempt to control Prisoner's and force them to partake in several minigames, while also killing rebellious Prisoner's.</li>
+                  <li class="list-group-item">2. CT's are regularly known as Guards.</li>
+				  <li class="list-group-item">3. T's are regularly known as Prisoners.</li>
+                  <li class="list-group-item">4. Prisoner's are regularly known as prisoners.</li>
+                  <li class="list-group-item">5. Prisoner's will attempt to defeat CPrisoner's by any means necessary.</li>
                </div>
                <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
