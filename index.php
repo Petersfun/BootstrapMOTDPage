@@ -94,6 +94,15 @@
                   <li class="list-group-item">14. No racial slurs, including coded racism.</li>
                   <li class="list-group-item">15. No scamming, offenders will be permanently banned.</li>
                   <li class="list-group-item">16. Use English only in voice chat.</li>
+				  <li class="list-group-item">17. Cell Doors must be opened by 18:30. If cells are unopened at 18:29, then a Freeday will be initiated immediately. If cells continue to be closed for extended periods of times or constantly, CT's may be (slayed/swap/ctban/kick/ban).</li>
+				  <li class="list-group-item">18. Freeze is implied at the end of a command unless ordered otherwise</li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>	
 				  </ul>
                </div>
                <span class="label label-default">Last Update: 7/4/2015</span>
@@ -128,9 +137,22 @@
 				  <li class="list-group-item">5b. Guards may not camp in a vent or in the way of a vent unless they would be baiting.</li>
 				  <li class="list-group-item">5c. Guards may kill any T in vents</li>
 				  <li class="list-group-item">5d. Guards may only enter vents if they see a T go in the vent or by wardens permission.</li>
+				  <li class="list-group-item">6. Guards may not stay in armory past 19:20 (40 seconds) (Armory Camping). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">7. Guards may not give T's weapons of any sort (Weapon Planting). Breaking this rule will result in a (slay/swap/ctban/kick/ban)</li>
+				  <li class="list-group-item">8. Guards may not wander or roam the map away from the Warden unless searching for rebellious T's.</li>
+				  <li class="list-group-item">9. Whoever is last CT must say that they are Last CT and must commit to being last CT. They may not give orders. The last T may LR.</li>
 				  <li class="list-group-item"></li>
 				  <li class="list-group-item"></li>
 				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+				  <li class="list-group-item"></li>
+
 				</ul>
 				  
 				  <ul class="list-group">
