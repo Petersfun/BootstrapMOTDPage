@@ -28,22 +28,22 @@
 					
 					function ConvertToDate($last_played)
 					{
-						if ($last_played == '')
-						{
-							$date = 'Not Available';
-						}
-						else
-						{
-							$date = new DateTime('@'. $last_played);
-							$date = $date->format('F j, Y, g:i a');
+							if ($last_played == NULL)
+							{
+								$date = 'Not Available';
+							}
+							else
+							{
+								$date = new DateTime('@'. $last_played);
+								$date = $date->format('g:i a, F j, Y');
+								$date = "<font color='red'><b> Last Online: ". $date . "</b></font>";
+								
+							if($date == strtotime(date('g:i a, F j, Y')))
+							{
+								$date = "<font color='green'><b>Online</b></font>";
+							}
+							}			
 							
 							return $date;
-							//return $last_played;
-						}
-						
-						if($last_played == date_default_timezone_get())
-						{
-							return echo "<font color = 'green'>Online</font>";
-						}
 						}
 			   ?>

@@ -14,7 +14,6 @@
 		include_once "php/config.php";
 		include_once "php/utilities.php";
 		global $conn;
-		global $conn2;
 	  ?>
    </head>
    <Nav>
@@ -215,70 +214,63 @@
 						<th align="center">Last Played</th>
                      </tr>
                      <?php	
-						$playername = null;
-						
+					 
 						$sqlowner = "SELECT * FROM `sb_admins` WHERE srv_group LIKE ''";
                         $sqladmin = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Admin'";
                         $sqldev = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Dev'";
                         $sqlmod = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Mod'";
-						$sqllp = "SELECT * FROM `adminwatch` WHERE name LIKE '$playername%'";
 						
                         if (!$conn->query($sqladmin) || !$conn->query($sqlmod) || !$conn->query($sqldev)) {
                             echo 'Error: ', $mysqli->error;
                         }
 						
-						$resultlp = $conn2->query($sqllp);
 						$resultowner = $conn->query($sqlowner);
                         $resultadmin = $conn->query($sqladmin);
                         $resultdev = $conn->query($sqldev);
 						$resultmod = $conn->query($sqlmod);     
 						
-                        if ($resultowner->num_rows > 0 && $resultlp->num_rows > 0) {
+                        if ($resultowner->num_rows > 0) {
                                               // output data of each row
 											 
                                             while($row = $resultowner->fetch_assoc()) 
 											{
-											$row2 = $resultlp->fetch_assoc();
-											$playername = $row['user'];
-                        		        	echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row2['last_played']) . "</td></tr>";
+											echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
 											}
                                           } else {
                                               echo "0 results";
                                           }
                       		
 							
-                        if ($resultdev->num_rows > 0 && $resultlp->num_rows > 0) {
+                        if ($resultdev->num_rows > 0) {
                                               // output data of each row
 											 
                                             while($row = $resultdev->fetch_assoc()) 
 											{
-											$row2 = $resultlp->fetch_assoc();
-											$playername = $row['user'];
-                        		        	echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row2['last_played']) . "</td></tr>";
+											echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
 											}
                                           } else {
                                               echo "0 results";
                                           }
                       		
-                         if ($resultadmin->num_rows > 0 && $resultlp->num_rows > 0) {
+                         if ($resultadmin->num_rows > 0) {
                                               // output data of each row
-                                            while($row = $resultadmin->fetch_assoc()) {
-											$row2 = $resultlp->fetch_assoc();
-											$playername = $row['user'];
-                        		        	echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row2['last_played']) . "</td></tr>";
-                                              }
-                                          } else {
+											while($row = $resultadmin->fetch_assoc()) 
+											{
+											echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+                                            }
+						 }
+                                          else {
                                               echo "0 results";
                                           }
                         
-                        if ($resultmod->num_rows > 0 && $resultlp->num_rows > 0) {
+                        if ($resultmod->num_rows > 0) {
                                               // output data of each row
-                                            while($row = $resultmod->fetch_assoc()) {
-											$row2 = $resultlp->fetch_assoc();
-											$playername = $row['user'];
-                        		        	echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row2['last_played']) . "</td></tr>";
-                                              }
-                                          } else {
+											while($row = $resultmod->fetch_assoc()) 
+											{
+											echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+                                            }
+						}
+											else {
                                               echo "0 results";
                                           }
                                       ?>
