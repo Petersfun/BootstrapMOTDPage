@@ -216,19 +216,32 @@
                      <?php	
 					 
 						$sqlowner = "SELECT * FROM `sb_admins` WHERE srv_group LIKE ''";
+						$sqlcommunityleader = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Community Leader'";
                         $sqladmin = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Admin'";
                         $sqldev = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Dev'";
                         $sqlmod = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Mod'";
 						
-                        if (!$conn->query($sqladmin) || !$conn->query($sqlmod) || !$conn->query($sqldev)) {
+                        if (!$conn->query($sqladmin) || !$conn->query($sqlmod) || !$conn->query($sqldev) || !$conn->query($sqlcommunityleader)) {
                             echo 'Error: ', $mysqli->error;
                         }
 						
 						$resultowner = $conn->query($sqlowner);
+						$resultcommunityleader = $conn->query($sqlcommunityleader);
                         $resultadmin = $conn->query($sqladmin);
                         $resultdev = $conn->query($sqldev);
 						$resultmod = $conn->query($sqlmod);     
 						
+						if ($resultcommunityleader->num_rows > 0) {
+                                              // output data of each row
+											 
+                                            while($row = $resultcommunityleader->fetch_assoc()) 
+											{
+											echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+											}
+                                          } else {
+                                              echo "0 results";
+                                          }
+										  
                         if ($resultowner->num_rows > 0) {
                                               // output data of each row
 											 
