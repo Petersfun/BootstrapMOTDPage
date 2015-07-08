@@ -307,6 +307,8 @@
                         <th align="center">Rank</th>
                         <th align="center">Name</th>
                         <th align="center">SteamID</th>
+						<th align="center">Profile</th>
+						<th align="center">Last Played</th>
                     </tr>
                   <?php
                      $sqlvip = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Vip'";
@@ -318,7 +320,7 @@
                      if ($resultvip->num_rows > 0) {
                                            // output data of each row
                                            while($row = $resultvip->fetch_assoc()) {
-                     		        	echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td></tr>";
+											echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
                                            }
                                        } else {
                                            echo "0 results";
