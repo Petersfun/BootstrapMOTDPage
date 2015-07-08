@@ -231,10 +231,10 @@
                         $resultdev = $conn->query($sqldev);
 						$resultmod = $conn->query($sqlmod);     
 						
-						if ($resultcommunityleader->num_rows > 0) {
+						if ($resultowner->num_rows > 0) {
                                               // output data of each row
 											 
-                                            while($row = $resultcommunityleader->fetch_assoc()) 
+                                            while($row = $resultowner->fetch_assoc()) 
 											{
 											echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
 											}
@@ -242,12 +242,12 @@
                                               echo "0 results";
                                           }
 										  
-                        if ($resultowner->num_rows > 0) {
+                        if ($resultcommunityleader->num_rows > 0) {
                                               // output data of each row
 											 
-                                            while($row = $resultowner->fetch_assoc()) 
+                                            while($row = $resultcommunityleader->fetch_assoc()) 
 											{
-											echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+											echo "<tr><td>" . $row['srv_group'] . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
 											}
                                           } else {
                                               echo "0 results";
