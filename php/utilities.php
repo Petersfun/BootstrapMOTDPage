@@ -38,12 +38,12 @@
 							$date = $date->format('F j, Y, g:i a');
 							
 							return $date;
+							//return $last_played;
 						}
 						
 						if($last_played == date_default_timezone_get())
 						{
-							echo "<font color = 'green'>Online</font>";
-							return $date;
+							return echo "<font color = 'green'>Online</font>";
 						}
 						}
 			   ?>
