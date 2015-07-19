@@ -14,6 +14,7 @@
 		include_once "php/config.php";
 		include_once "php/utilities.php";
 		global $conn;
+		global $conn2;
 	  ?>
    </head>
    <Nav>
@@ -56,18 +57,6 @@
       <div class="col-md-12">
       <div class="page-header">
         <center><h2>Jailbreak Rules</h2></center>
-         <small>
-            <div class="alert alert-warning alert-dismissible" role="alert">
-               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <center><strong>Info!</strong> Under Development.</center>
-			   
-			<div class="progress">
-			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-			Complete: 90%
-			</div>
-			</div>
-            </div>
-         </small>
       </div>
       <div class="col-md-12">
          </br> 
@@ -78,8 +67,7 @@
                   <li class="list-group-item">1. Prisoner's will attempt to control Prisoner's and force them to partake in several minigames, while also killing rebellious Prisoner's.</li>
                   <li class="list-group-item">2. CT's are regularly known as Guards.</li>
 				  <li class="list-group-item">3. T's are regularly known as Prisoners.</li>
-                  <li class="list-group-item">4. Prisoner's are regularly known as prisoners.</li>
-                  <li class="list-group-item">5. Prisoner's will attempt to defeat CPrisoner's by any means necessary.</li>
+                  <li class="list-group-item">5. Prisoner's will attempt to defeat Guards by any means necessary.</li>
                </div>
                <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
@@ -147,8 +135,8 @@
 				  <li class="list-group-item">23. Wardens may not use consecutive "days".	Example: Warden A may not use a warday after Warden B used on the previous round.</li>
 				  <li class="list-group-item">24. Wardens may not revoke warden-initiated Freedays or Wardays.</li>
 				  <li class="list-group-item">25. Wardens may not use "jump restriction" commands in a row. Breaking this rule will result in a (slay/swap).</li>
-				  <li class="list-group-item">26. If no Guards's are willing to Warden, then a freeday may be declared by an Admin accompanying an entire team swap.</li>
-				  <li class="list-group-item">27. Wardens can be established within the CPrisoner's to give orders to the Prisoner's through the !w chat command.</li>
+				  <li class="list-group-item">26. If no Guards are willing to Warden, then a freeday may be declared by an Admin accompanying an entire team swap.</li>
+				  <li class="list-group-item">27. Wardens can be established within warden menu to give orders to the Prisoner's through the !w chat command.</li>
 				  <li class="list-group-item">28. Guards may not wander or roam the map away from the Warden unless searching for rebellious Prisoner's.</li>
 				  </div>
 				</ul>
@@ -182,6 +170,7 @@
 				  <li class="list-group-item">6. Admins cannot punish (slay, mute, etc) another admin for ANY reason and will result in the removal of your admin</li>
 				  <li class="list-group-item">7. Do not force map changes unless the current map is bugged or broken.</li>
 				  <li class="list-group-item">8. Do not use admin abilities to adversely affect players without consensus from that player or the server, with the exception of punishments.</li>
+				  <li class="list-group-item">9. Admin's are not allowed to take bribes.</li>
 				  </div>
 				  </ul>
 				  
@@ -221,7 +210,11 @@
                         $sqldev = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Dev'";
                         $sqlmod = "SELECT * FROM `sb_admins` WHERE srv_group LIKE 'Mod'";
 						
-                        if (!$conn->query($sqladmin) || !$conn->query($sqlmod) || !$conn->query($sqldev) || !$conn->query($sqlcommunityleader)) {
+						$steamID = NULL;
+						$sqllastplayed = "SELECT * FROM `adminwatch` WHERE steam LIKE '$steamID%'";
+
+												
+                        if (!$conn->query($sqladmin) || !$conn->query($sqlmod) || !$conn->query($sqldev) || !$conn->query($sqlcommunityleader) || !$conn2->query($sqllastplayed)) {
                             echo 'Error: ', $mysqli->error;
                         }
 						
@@ -229,14 +222,19 @@
 						$resultcommunityleader = $conn->query($sqlcommunityleader);
                         $resultadmin = $conn->query($sqladmin);
                         $resultdev = $conn->query($sqldev);
-						$resultmod = $conn->query($sqlmod);     
-						
+						$resultmod = $conn->query($sqlmod);  
+
+						$resultlastplayed = $conn2->query($sqllastplayed);  
+										  
 						if ($resultowner->num_rows > 0) {
                                               // output data of each row
 											 
                                             while($row = $resultowner->fetch_assoc()) 
 											{
-											echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+												if ($resultlastplayed->num_rows > 0)
+												{																		
+												echo "<tr><td>" . "Owner" . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+												}
 											}
                                           } else {
                                               echo "0 results";
