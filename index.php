@@ -73,7 +73,6 @@
                  DisplayRules("Game Objective");
                  ?>
                </div>
-               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
@@ -127,9 +126,6 @@
             ?>
 				  </div>
 				  <ul>
-               </div>
-               <span class="label label-default">Last Update: 7/5/2015</span>
-            </div>
          </div>
          </br>
 		 <div name="STAFF">
@@ -154,9 +150,6 @@
                       DisplayGroup("Probationary Mod");
                      ?>
                   </table>
-               </div>
-               <span class="label label-default">Last Update: 7/5/2015</span>
-            </div>
          </div>
          </br>
          <div name="VIPINFO">
@@ -193,9 +186,6 @@
                      DisplayGroup("VIP");
                      ?>
 				  </table>
-               </div>
-               <span class="label label-default">Last Update: 7/5/2015</span>
-            </div>
          </div>
          </br>
          <div name="COMMANDS">
@@ -215,7 +205,6 @@
                   <li class="list-group-item">!calladmin - Report a Player</li>
 				  </ul>
                </div>
-               <span class="label label-default">Last Update: 7/5/2015</span>
             </div>
          </div>
          </br>
