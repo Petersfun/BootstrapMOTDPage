@@ -15,6 +15,7 @@
 	    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
       <!--<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css' />-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
       <link rel="stylesheet" href="utilities/tipsy/stylesheets/tipsy.css" type='text/css' />
       <link rel="stylesheet" href="css/style.css" type='text/css' />
 	  <?php
@@ -224,7 +225,7 @@
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/167.114.205.132:27015" role="button">Idle</a>
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="ts3server://ts.toxicgaming.org" role="button">TeamSpeak</a>
 		 <br />
-		 MOTD webpage made by <a href="https://github.com/Petersfun" style="color:red; text-decoration:none;">Petersfun</a>.
+		 MOTD webpage made by <a href="https://github.com/Petersfun" style="color:red; text-decoration:none;">Petersfun</a> | <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
       </footer>
       <!--Placed at the bottom for faster loading speeds.-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
