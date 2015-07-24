@@ -127,6 +127,7 @@
 				  </div>
 				  <ul>
          </div>
+       </div>
          </br>
 		 <div name="STAFF">
             <div class="panel panel-primary">
@@ -151,6 +152,7 @@
                      ?>
                   </table>
          </div>
+       </div>
          </br>
          <div name="VIPINFO">
             <div class="panel panel-primary">
@@ -187,6 +189,7 @@
                      ?>
 				  </table>
          </div>
+       </div>
          </br>
          <div name="COMMANDS">
             <div class="panel panel-primary">
@@ -209,6 +212,7 @@
          </div>
          </br>
       </div>
+    </div>
       <footer style="text-align: center; width: 100%; margin-top: 15px;">
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/play.toxicgaming.org" role="button">Jailbreak</a>
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/167.114.205.132:27015" role="button">Idle</a>
@@ -231,6 +235,8 @@
         $finish = $time;
         $total_time = round(($finish - $start), 4);
         echo '<center>Page generated in '.$total_time.' seconds.</center>';
+
+        //getAvatar("STEAM_0:1:54737215");
       ?>
    </body>
 </html>

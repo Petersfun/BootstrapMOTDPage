@@ -89,5 +89,6 @@
 						{
 								echo "0 results, Make sure you have correct Rank.";
 						}
+//
 				}
 ?>
