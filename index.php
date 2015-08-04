@@ -21,6 +21,12 @@
 	  <?php
     include_once "php/utilities.php";
 	  ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="utilities/tipsy/javascripts/jquery.tipsy.js"></script>
+    <script>
+       $(".tip").tipsy({ gravity: 'n' });
+       </script>
    </head>
    <Nav>
    <nav class="navbar navbar-default navbar-fixed-top">
@@ -135,6 +141,7 @@
                <div class="collapse" id="Staff">
                   <table class="table">
                      <tr>
+                        <th align="center">Avatar</th>
                         <th align="center">Rank</th>
                         <th align="center">Name</th>
                         <th align="center">SteamID</th>
@@ -213,30 +220,20 @@
          </br>
       </div>
     </div>
+  </body>
       <footer style="text-align: center; width: 100%; margin-top: 15px;">
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/play.toxicgaming.org" role="button">Jailbreak</a>
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="steam://connect/167.114.205.132:27015" role="button">Idle</a>
          <a id="inlinebutton" class="btn btn-primary btn-lg" href="ts3server://ts.toxicgaming.org" role="button">TeamSpeak</a>
 		 <br />
 		 MOTD webpage made by <a href="https://github.com/Petersfun" style="color:red; text-decoration:none;">Petersfun</a> | <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+     <?php
+       $time = microtime();
+       $time = explode(' ', $time);
+       $time = $time[1] + $time[0];
+       $finish = $time;
+       $total_time = round(($finish - $start), 4);
+       echo '<center>Page generated in '.$total_time.' seconds.</center>';
+     ?>
       </footer>
-      <!--Placed at the bottom for faster loading speeds.-->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="utilities/tipsy/javascripts/jquery.tipsy.js"></script>
-      <script>
-         $(".tip").tipsy({ gravity: 'n' });
-         </script>
-
-      <?php
-        $time = microtime();
-        $time = explode(' ', $time);
-        $time = $time[1] + $time[0];
-        $finish = $time;
-        $total_time = round(($finish - $start), 4);
-        echo '<center>Page generated in '.$total_time.' seconds.</center>';
-
-        //getAvatar("STEAM_0:1:54737215");
-      ?>
-   </body>
 </html>

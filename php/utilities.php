@@ -67,8 +67,18 @@
 
 					}
 
+
+					function DisplayAvatar($ID64 = '76561198026774473')
+					{
+							$url = "http://steamcommunity.com/profiles/".$ID64."/?xml=1";
+	  					$xml = simplexml_load_file($url) or die("feed not loading");
+
+							return $xml->avatarMedium;
+					}
+
 					function DisplayGroup($svrgroup = "")
 					{
+						  error_reporting(E_ALL);
 							global $conn;
 							$svrgroup = mysqli_real_escape_string($conn, $svrgroup);
 							$sqlGroup = "SELECT * FROM `sb_admins` WHERE srv_group LIKE '{$svrgroup}%'";
@@ -82,7 +92,7 @@
 	            // output data of each row
 	            while($row = $resultGroup->fetch_assoc())
 							{
-										echo "<tr><td>" . $svrgroup . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . '<a href="http://steamcommunity.com/profiles/' . IDto64($row['authid']) . '">Link</a>' . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
+								echo "<tr><td>" . "<img src='". DisplayAvatar(IDto64($row['authid'])) ."'>" . "</td><td>". $svrgroup . "</td><td>" . $row['user'] . "</td><td>" . $row['authid'] . "</td><td>" . "<a href='http://steamcommunity.com/profiles/" . IDto64($row['authid']) . "'>Link</a>" . "</td><td>" . ConvertToDate($row['lastvisit']) . "</td></tr>";
 							}
 						}
 						else
